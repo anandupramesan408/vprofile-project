@@ -58,6 +58,7 @@ pipeline{
                    -Dsonar.java.binaries=target/test-classes/com/visualpathit/account/controllerTest/ \
                    -Dsonar.junit.reportsPath=target/surefire-reports/ \
                    -Dsonar.jacoco.reportsPath=target/jacoco.exec \
+                   -Dsonar.scanner.jvmArgs="--add-opens java.base/java.lang=ALL-UNNAMED"
                    -Dsonar.java.checkstyle.reportPaths=target/checkstyle-result.xml'''
             }
           }
